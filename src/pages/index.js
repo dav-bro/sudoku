@@ -1,11 +1,12 @@
 import React from "react"
-import { navigate } from "gatsby-link"
 
 const IndexPage = () => {
 
-  navigate('blog/test');
-
-  return null;
+  return (
+    <p className="m-20 text-center py-1 bg-teal-500 capitalize">
+      index
+    </p>
+  );
 }
 
 

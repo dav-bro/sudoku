@@ -3,19 +3,3 @@
 @tailwind components;
 
 @tailwind utilities;
-
-.markdown h1 {
-    @apply text-6xl;
-}
-.markdown h2 {
-    @apply text-5xl;
-}
-.markdown h3 {
-    @apply text-4xl;
-}
-.markdown h4 {
-    @apply text-3xl;
-}
-.markdown h5 {
-    @apply text-2xl;
-}
