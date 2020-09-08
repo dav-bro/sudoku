@@ -1,42 +1,16 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import Parallax from "./parallax"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = () => {
+
+
+  return(
+    <div  className="fixed flex w-full top-0 h-20  flex-row justify-center bg-gray-800  items-center border-0   z-20 " >
+      <p className="text-2xl p-6  text-white hover:bg-gray-900 flex items-center cursor-pointer h-full" >home</p>
+      <p className="text-2xl p-6 text-white hover:bg-gray-900 flex items-center cursor-pointer h-full" >about</p>
     </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+  )
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+export default Header;
 
-export default Header
